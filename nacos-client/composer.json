@@ -1,0 +1,56 @@
+{
+    "name": "longxiaoyang/nacos-client",
+    "description": "nacos clent.",
+    "license": "MIT",
+    "homepage": "https://hyperf.io",
+    "support": {
+        "docs": "https://hyperf.wiki",
+        "issues": "https://github.com/hyperf/hyperf/issues",
+        "pull-request": "https://github.com/hyperf/hyperf/pulls",
+        "source": "https://github.com/hyperf/hyperf"
+    },
+    "require": {
+        "php": ">=7.2",
+        "psr/container": "^1.0",
+        "hyperf/load-balancer": "~2.0.0",
+        "hyperf/utils": "~2.0.0",
+        "roave/better-reflection": "^4.0",
+        "hyperf/nacos": "~2.0.20"
+    },
+    "require-dev": {
+        "malukenho/docheader": "^0.1.6",
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^7.0.0",
+        "friendsofphp/php-cs-fixer": "^2.9"
+    },
+    "suggest": {
+        "hyperf/di": "For better container experience.",
+        "hyperf/pool": "Required to use connection pool."
+    },
+    "autoload": {
+        "psr-4": {
+            "Longxiaoyang\\NacosClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        },
+        "hyperf": {
+            "config": "Longxiaoyang\\NacosClient\\ConfigProvider"
+        }
+    },
+    "bin": [
+    ],
+    "scripts": {
+        "cs-fix": "php-cs-fixer fix $1",
+        "test": "phpunit --colors=always"
+    }
+}
